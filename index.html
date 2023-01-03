@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="ABC 부트캠프">
-    <meta property="og:description" content="데이터교육 맛집 IT+ESG 부트캠프, #ABC부트캠프">
-    <meta property="og:image" content="edu.png">
-    <title>ABC 부트캠프</title>
+    <meta property="og:title" content="2023 ABC 부트캠프">
+    <meta property="og:description" content="2023 ABC 부트캠프 참여자 모집">
+    <meta property="og:image"
+        content="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%EB%A5%B4%ED%83%84+%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90/%EB%A5%B4%ED%83%84%EC%98%A4%EB%A6%AC%EC%A7%80%EB%84%90%ED%94%84%EB%A1%9C%ED%95%84.png">
+    <title>2023 ABC 부트캠프 참여자 모집</title>
     <style>
         @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
@@ -17,41 +18,93 @@
         }
 
         body {
-            background: linear-gradient(to top, #245245 91%, white 9%);
-            height: 100vh;
+            background-color: #3C3D47;
+        }
+
+        .pro {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 40px;
         }
 
         .profile {
-            width: auto;
-            height: auto;
-            width: 400px;
-            height: 100px;
-            background-image: url('bootcamp.png');
-            /*border-radius: 100%;*/
-            /*border: 2px solid white;*/
-            background-size: cover;
+            width: 58px;
+            height: 58px;
+            border-radius: 100%;
+            border: 1px solid black;
+            background-image: url('edu.png');
             background-position: center;
+            background-size: cover;
+        }
+
+        .headcopy {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 260px;
         }
 
         .main {
-            color: white;
-            font-size: 22px;
+            color: #FFFFFF;
+            font-size: 27px;
             size: 20px;
-            margin-top: 30px;
-            margin-bottom: 10px;
+            font-weight: 800;
+            margin: 0%;
         }
 
         .sub {
-            color: white;
+            color: #B1B1B5;
             font-size: 14px;
             font-weight: 400;
             size: 14px;
-            margin-top: 0px;
-            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+
+        .minis {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 7px;
+            margin-bottom: 68px;
+        }
+
+        .minis>a {
+            width: 80px;
+            height: 48px;
+            border-radius: 32px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            white-space: pre-wrap;
+        }
+
+        .insta {
+            background: linear-gradient(287.96deg, rgba(255, 178, 178, 0.16) 15.1%, rgba(0, 0, 0, 0) 83.32%), #df2598;
+            color: #FFFFFF;
+        }
+
+        .blog {
+            background: linear-gradient(287.96deg, rgba(0, 0, 0, 0.16) 15.1%, rgba(0, 0, 0, 0) 83.32%), #0bf0ab;
+            color: #FFFFFF;
+        }
+
+        .youtube {
+            background: linear-gradient(287.96deg, rgba(0, 0, 0, 0.16) 15.1%, rgba(0, 0, 0, 0) 83.32%), #f31d1d;
+            color: #FFFFFF;
+        }
+
+        .kakao {
+            background: linear-gradient(287.96deg, rgba(0, 0, 0, 0.16) 15.1%, rgba(0, 0, 0, 0) 83.32%), #bacc18;
+            color: #FFFFFF;
         }
 
         .wrap {
-            width: 300px;
+            width: 320px;
             margin: 30px auto 0px auto;
             display: flex;
             flex-direction: column;
@@ -59,104 +112,139 @@
             align-items: center;
         }
 
-        .bigbutton {
-            width: 320px;
-            height: 59px;
-            border-radius: 8px;
-            background-color: white;
-            margin-bottom: 16px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #000000;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            box-shadow: 0px 4px 16px rgba(70, 33, 253, 0.2);
-        }
-
-        .buttons>a {
-            width: 152px;
-            height: 59px;
-            border-radius: 8px;
-            font-size: 15px;
-            font-weight: bold;
-            color: #FFFFFF;
+        .bigs {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            text-decoration: none;
-            box-shadow: 0px 4px 16px rgba(70, 33, 253, 0.2);
-            margin: 0px 8px 17px 8px;
+            padding: 0px;
+            gap: 10px;
         }
 
-        .dding {
-            background-color: #e8344e;
-        }
-
-        .online {
-            background-color: #f50000;
-        }
-
-        .hang {
-            background-color: #F3961C;
-        }
-
-        .chang {
-            background-color: #09ce20;
-            color: black;
-        }
-
-        .buttons {
+        .bigs2 {
             display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            gap: 10px;
         }
 
-        .wrap>a:hover {
-            background-color: #f2f2f2;
+        .bigs>a {
+            width: 123px;
+            background-color: white;
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-decoration: none;
+            padding: 20px 16px 16px 16px;
+            border-radius: 8px;
         }
 
-        .image {
-            width: 607px;
-            height: 153px;
-            background-image: url('bootcamp.png');
-            /*border-radius: 100%;*/
-            /*border: 2px solid white;*/
-            background-size: cover;
-            background-position: center;
+        .bigs2>a {
+            width: 285px;
+            background-color: white;
+            margin-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-decoration: none;
+            padding: 20px 16px 16px 16px;
+            border-radius: 8px;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #222222;
+            margin-bottom: 45px;
+        }
+
+        .desc {
+            font-size: 12px;
+            font-weight: 500;
+            color: #555555;
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            font-size: 12px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #26C50C;
+            border-radius: 4px;
+            padding: 5px 4px 5px 4px;
+        }
+
+        .mainVideo {
+            margin-top: 20px;
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+        }
+
+        .mainVideo iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 
 <body>
     <div class="wrap">
-        <div class="profile"></div>
-        <h1 class="main"></h1>
-        <p class="sub"> ✨ 참여 혜택<br>- 참여자 수당 월 100만원 지급 <br> - 월별 우수 참여자 인센티브 지급 <br> - 탑티어 지역 기업 & 빅테크 대기업 출시 재직자 특강
-            <br> - 최신 노트북 & 노트북 지원 <br> - 웰컵 부스터 굿즈 제공
-        </p>
-
-        <a class="bigbutton" target="_blank"
-            href="https://euclidsoftrecruit.notion.site/2023-ABC-2933fcdefd734a3dbfe8befb5a556bc1">⛺️
-            2023 ABC 부트캠프 알아보기!</a>
-        <a class="bigbutton" target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSf7bpZoE4KSx2JD1Fd-z6nAkSva-0zLqJScchsnnImJT-DY-w/viewform">
-            🏕 부트캠프 신청서 바로가기!</a>
-        <div class="buttons">
-            <a class="dding" target="_blank" href="https://www.instagram.com/euclidsoft.edu.official/">인스타그램</a>
-            <a class="online" target="_blank" href="https://www.youtube.com/watch?v=28cWF77iZJc">유튜브</a>
+        <div class="pro">
+            <div class="headcopy">
+                <h1 class="main">2023 ABC 부트캠프<br>참여자 모집</h1>
+            </div>
+            <div class="profile"></div>
         </div>
-        <div class="buttons">
-            <a class="hang" target="_blank" href="https://pf.kakao.com/_pDpyb">카카오채널</a>
-            <a class="chang" target="_blank" href="https://blog.naver.com/abc_bootcamp">네이버 블로그</a>
+        <p class="sub">ABC 부트캠프 소식을 가장 빨리 볼 수 있는 SNS!</p>
+        <div class="minis">
+            <a class="insta" target="_blank" href="https://www.instagram.com/euclidsoft.edu_official/">인스타그램 <span
+                    style="color:#FFFFFF">></span></a>
+            <a class="blog" target="_blank" href="https://blog.naver.com/abc_bootcamp">블로그 ></a>
+            <a class="youtube" target="_blank" href="https://www.youtube.com/channel/UCMNq1zDPEXcsUNM_iNbUgjg"> 유튜브
+                ></a>
+            <a class="kakao" target="_blank" href="https://pf.kakao.com/_pDpyb">카카오 채널 ></a>
         </div>
-        <h3 class="main">2022 ABC 부트캠프 참여후기👇 </h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ojc4vbL-frE?autoplay=1&mute=1"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe> <br>
+        <!-- <div style="color:#FFFFFF;width: 320px;font-size: 14px;margin-bottom:8px;"> ABC 부트캠프 참여</div> -->
+        <div class="bigs">
+            <a target="_blank" href="https://forms.gle/ZvuHnxy62GR2ddh7A">
+                <div class="name">자세히 알기</div>
+                <div class="desc">2023 ABC 부트캠프를 자세히 알고 싶다면!<br> 아래 버튼 클릭!<br></div>
+                <div class="btn">자세히 알기</div>
+            </a>
+            <a target="_blank" href="https://drive.google.com/file/d/1vKXXHboiF39D8OdandIZRlAVe4ggnONb/view">
+                <div class="name">신청하기</div>
+                <div class="desc">2023 ABC 부트캠프 신청서로 바로 이동!<br>3분이면 신청 완료!</div>
+                <div class="btn">신청하기</div>
+            </a>
+        </div>
+        <div class="bigs2">
+            <a target="_blank" href="https://forms.gle/ZvuHnxy62GR2ddh7A">
+                <div class="name">참여자 혜택</div>
+                <div class="desc"> 💰 참여자 수당 월 100만원<br> 🤑 월별 우수 참여자 인센티브 지급<br> 💻 최신 노트북&교재비 지원 <br> ⌨ 웰컴 부스터 굿즈 제공
+                    <br>
+                    🧑 탑티어 지역 기업 & 빅테크 대기업 출신 재직자 특강
+                </div>
+                <div class="btn">신청하기</div>
+            </a>
+        </div>
+        <div class="mainVideo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ojc4vbL-frE?autoplay=1&mute=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe> <br>
+        </div>
+        <br>
+        <br>
 
+        <img src="bootcamp2.png" style="max-width: 100%; height: auto;">
+        <div
+            style="color:#B1B1B5;font-size: 14px;background-position: center;background-size: cover;position: absolute;bottom: 50px;">
+            @유클리드소프트 교육팀<br> ☎ 070-5151-5582 <br> 📫eudlisoft_edu@naver.com </div>
     </div>
 </body>
 
